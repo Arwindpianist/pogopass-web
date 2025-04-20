@@ -32,6 +32,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          {/* Add the logo in full resolution */}
+          <img src="/logo.svg" alt="PoGoPass Logo" className="w-full max-w-xs mb-8" />
+
           <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
             PoGoPass
           </h1>

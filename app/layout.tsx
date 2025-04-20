@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -37,6 +37,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/logo.ico" />
+      </head>
       <body className={`${inter.variable} ${spaceMono.variable} font-sans bg-gray-950 text-gray-100`}>
         <Header />
         <main>{children}</main>
@@ -45,6 +48,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
